@@ -25,7 +25,7 @@ npm run deploy
 ## Change the title with user input
 ### onChange event
 - When value changed, call the function `handleChange`.
-```HTML
+```
 onChange={handleChange}
 // when value in html change event(handleChange) occur
 ```
@@ -53,7 +53,7 @@ onChange={handleChange}
         >
           Submit
         </button>
-```javascript
+```
 
 ## Reference
 https://stackoverflow.com/questions/52022197/how-do-i-get-my-gh-pages-branch-to-update
