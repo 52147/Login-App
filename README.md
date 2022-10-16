@@ -29,6 +29,9 @@ onChange={handleChange}
 // when value in html change event(handleChange) occur
 ```
 ```javascript
+  function handleChange(event) {
+    const { name, value } = event.target;
+
     setContact((preValue) => {
       return {
         // spread operator(...) : allows us to copy existing array/object into another array/object
