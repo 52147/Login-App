@@ -20,7 +20,6 @@ yarn deploy
 or
 ```
 npm run deploy
-
 ```
 
 ## Reference
