@@ -23,7 +23,7 @@ npm run deploy
 ```
 
 ## Change the title with user input
-`onChange`
+### onChange event
 - When value changed, call the function `handleChange`.
 ```HTML
 onChange={handleChange}
@@ -42,6 +42,18 @@ onChange={handleChange}
     });
   }
 ```
+### onMouseOver/ onMouseOut event
+```javascript
+        <button
+          style={{ background: isMouseOver ? "black" : "white" }}
+          // html dom event: onMouseOver, onMouseOut
+          // event handling: allows javascript handle html event
+          onMouseOver={handleMouseOver} // handleMouseOver function will be executed when Mouse over
+          onMouseOut={handleMouseOut}
+        >
+          Submit
+        </button>
+```javascript
 
 ## Reference
 https://stackoverflow.com/questions/52022197/how-do-i-get-my-gh-pages-branch-to-update
