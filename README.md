@@ -24,7 +24,7 @@ npm run deploy
 
 ## Change the title with user input
 - Use onChange to change value when user input
-```javascript
+```Javascript
 onChange={handleChange}
 // when value in html change event(handleChange) occur
 ```
