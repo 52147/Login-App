@@ -22,6 +22,26 @@ or
 npm run deploy
 ```
 
+## React useState
+- allow us to track state(property) in a function
+- First need to import useState 
+- initialize useState
+`cost[current state, function to update state] = useState(initial value of state)`
+
+- When user input change, set the new data by using `setContact`
+```javascript
+  function handleChange(event) {
+    const { name, value } = event.target;
+
+    setContact((preValue) => {
+      return {
+        // spread operator(...) : allows us to copy existing array/object into another array/object
+        ...preValue,
+        [name]: value
+      };
+    });
+  }
+ ```
 ## Change the title with user input
 ### onChange event
 - When value changed, call the function `handleChange`.
