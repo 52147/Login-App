@@ -1,6 +1,6 @@
 # Login-App
 
-This is a personal information app built with React.js. Users can enter first name, last name, and email address. When they are entering the data, alert while changing at the same time.
+This is a login app built with React.js. Users can enter first name, last name, and email address. When they are entering the data, alert while changing at the same time.
 
 ## Update gh-pages
 ```
