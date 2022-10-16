@@ -25,9 +25,18 @@ npm run deploy
 ## React useState
 - allow us to track state(property) in a function
 - First need to import useState 
+```javascript
+import React, { useState } from "react";
+```
 - initialize useState
 `cost[current state, function to update state] = useState(initial value of state)`
-
+```javascript
+  const [contact, setContact] = useState({
+    fName: "",
+    lName: "",
+    email: ""
+  });
+ ```
 - When user input change, set the new data by using `setContact`
 ```javascript
   function handleChange(event) {
