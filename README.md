@@ -42,7 +42,10 @@ onChange={handleChange}
     });
   }
 ```
+## Change button color when mouse over button and mouse out of button
 ### onMouseOver/ onMouseOut event
+- When mouse over button and moust out of button, call the event handling function.
+- when isMouse is true, set the background with black, otherwise set the background with white.
 ```javascript
         <button
           style={{ background: isMouseOver ? "black" : "white" }}
@@ -54,6 +57,18 @@ onChange={handleChange}
           Submit
         </button>
 ```
+- Use useState to set the initial value with false
+- if mouse over the button, set update state with true
+- if mouse out of the button, set update state with false
+```javascript
+  const [isMouseOver, setMouseOver] = useState(false);
 
+  function handleMouseOver() {
+    setMouseOver(true);
+  }
+  function handleMouseOut() {
+    setMouseOver(false);
+  }
+```
 ## Reference
 https://stackoverflow.com/questions/52022197/how-do-i-get-my-gh-pages-branch-to-update
