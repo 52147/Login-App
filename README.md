@@ -24,9 +24,19 @@ npm run deploy
 
 ## Change the title with user input
 - Use onChange to change value when user input
-```Javascript
+```html
 onChange={handleChange}
 // when value in html change event(handleChange) occur
+```
+```javascript
+    setContact((preValue) => {
+      return {
+        // spread operator(...) : allows us to copy existing array/object into another array/object
+        ...preValue,
+        [name]: value
+      };
+    });
+  }
 ```
 
 ## Reference
