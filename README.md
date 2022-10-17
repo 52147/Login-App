@@ -71,19 +71,7 @@ onChange={handleChange}
     });
   }
 ```
-- deletItem function: use filter() to return the item is not equal to the id
-```javascript
-  // delete function:
-  // use filter() that return the array that index is not equal to id
-  // in this way, we can display an ittem list that do not have deleted item
-  function deleteItem(id) {
-    setItems((prevItems) => {
-      return prevItems.filter((item, index) => {
-        return index !== id;
-      });
-    });
-  }
-```
+
 ## Change button color when mouse over button and mouse out of button
 ### onMouseOver/ onMouseOut event
 - When mouse over button and moust out of button, call the `event handling function`.
